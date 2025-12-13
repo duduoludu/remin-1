@@ -3,6 +3,6 @@
 4:I[97367,["/remin/_next/static/chunks/ff1a16fafef87110.js","/remin/_next/static/chunks/bfa4740ca9d3df3a.js"],"MetadataBoundary"]
 5:"$Sreact.suspense"
 7:I[27201,["/remin/_next/static/chunks/ff1a16fafef87110.js","/remin/_next/static/chunks/bfa4740ca9d3df3a.js"],"IconMark"]
-0:{"buildId":"nnV9pf2rXn-erTi6L0S-B","rsc":["$","$1","h",{"children":[["$","meta",null,{"name":"robots","content":"noindex"}],["$","$L2",null,{"children":"$@3"}],["$","div",null,{"hidden":true,"children":["$","$L4",null,{"children":["$","$5",null,{"name":"Next.Metadata","children":"$@6"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"loading":null,"isPartial":false}
+0:{"buildId":"XR1y15B1GhCG3SACDrOoY","rsc":["$","$1","h",{"children":[["$","meta",null,{"name":"robots","content":"noindex"}],["$","$L2",null,{"children":"$@3"}],["$","div",null,{"hidden":true,"children":["$","$L4",null,{"children":["$","$5",null,{"name":"Next.Metadata","children":"$@6"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"loading":null,"isPartial":false}
 3:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
 6:[["$","title","0",{"children":"Remin | Clearing the Mind"}],["$","meta","1",{"name":"description","content":"From fog to clarity. A mental health journey."}],["$","link","2",{"rel":"icon","href":"/remin/favicon.ico?favicon.0b3bf435.ico","sizes":"256x256","type":"image/x-icon"}],["$","$L7","3",{}]]
