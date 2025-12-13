@@ -48,7 +48,7 @@ export default function Navigation() {
                     {/* Logo */}
                     <Link href="/" className="flex items-center gap-2 group h-full">
                         <img
-                            src="/remin/logo.png"
+                            src="/logo.png"
                             alt="Remin"
                             className="h-8 md:h-10 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
                             onError={(e) => {
@@ -136,7 +136,7 @@ export default function Navigation() {
                             className="flex-shrink-0 pb-12 w-full text-center text-remin-text/40 text-sm relative z-10"
                         >
                             <Link href="/" className="inline-flex items-center justify-center gap-2 mb-4 group opacity-80 hover:opacity-100 transition-opacity">
-                                <img src="/remin/logo.png" alt="Remin" className="h-6 w-auto object-contain grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 transition-all" onError={(e) => {
+                                <img src="/logo.png" alt="Remin" className="h-6 w-auto object-contain grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 transition-all" onError={(e) => {
                                     e.currentTarget.style.display = 'none';
                                     e.currentTarget.nextElementSibling?.classList.remove('hidden');
                                 }} />
