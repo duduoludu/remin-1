@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme {
+  --color-remin-blue: #6DA0E1;
+  --color-remin-clear: #F4F6F8;
+  --color-remin-text: #2C3E50;
+  
+  --font-sans: var(--font-inter);
+  --font-serif: var(--font-playfair);
+}
+
+/* Custom Utilities */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+body {
+  background-color: var(--color-remin-clear);
+  color: var(--color-remin-text);
+  font-family: var(--font-sans);
+}

@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RE:MIN - 당신의 감정을 어루만지는 시간</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500;700&family=Outfit:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-round.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/static/woff2/SUIT.css" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/all.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header id="main-header" class="fixed-header">
+        <div class="container">
+            <div class="logo">
+                <a href="#">
+                    <img src="assets/images/logo.png" alt="RE:MIN Logo">
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="./app.html">앱 소개</a></li>
+                    <li><a href="./about.html">브랜드 이야기</a></li>
+                    <li><a href="./goods.html">굿즈</a></li>
+                    <li><a href="./team.html">팀</a></li>
+                    <li><a href="./notice.html">공지사항</a></li>
+                    <li class="desktop-only"><button class="btn btn-primary btn-header"
+                            onclick="handleContactNavigation()">문의하기</button></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Overlay -->
+    <nav class="reminal-mobile-menu">
+        <ul>
+            <li><a href="index.html">홈</a></li>
+            <li><a href="about.html">브랜드 이야기</a></li>
+            <li><a href="app.html">앱 소개</a></li>
+            <li><a href="goods.html">굿즈</a></li>
+            <li><a href="team.html">팀</a></li>
+            <li><a href="notice.html">공지사항</a></li>
+            <li><a href="contact.html" class="btn btn-primary">문의하기</a></li>
+            <li><a href="index.html#emergency">긴급 도움</a></li>
+            <li><a href="#download" class="btn btn-primary"
+                    onclick="document.querySelector('.reminal-mobile-menu').classList.remove('open'); document.body.classList.remove('no-scroll');">앱
+                    다운로드</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main">
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <canvas id="wave-canvas"></canvas>
+            <div class="container hero-content">
+                <div class="text-group fade-in-up">
+                    <h1 class="main-title">당신의 지금은<br>어떤가요?</h1>
+                    <p class="sub-title">리민은 감정의 파동을 부드럽게 가라앉히는<br>일상용 감정 케어 도구입니다.</p>
+                    <div class="cta-group">
+                        <a href="#download" class="btn btn-primary">앱 다운로드</a>
+                        <a href="./about.html" class="btn btn-secondary">브랜드 이야기 보기</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Optional: Gradient Overlay if canvas fails or for extra texture -->
+            <div class="hero-overlay"></div>
+        </section>
+
+        <!-- Why Reminal Section -->
+        <section id="why" class="section-padding">
+            <div class="container">
+                <div class="section-header text-center fade-in">
+                    <h2>Why Reminal?</h2>
+                    <p>우리가 당신의 감정에 집중하는 이유</p>
+                </div>
+                <div class="cards-grid">
+                    <div class="card fade-in">
+                        <div class="card-icon">🛡️</div>
+                        <h3>안전한 공간</h3>
+                        <p>비난받지 않고 온전히 나를<br>드러낼 수 있는 공간입니다.</p>
+                    </div>
+                    <div class="card fade-in" style="transition-delay: 0.1s;">
+                        <div class="card-icon">🌊</div>
+                        <h3>순간의 안정</h3>
+                        <p>거친 감정의 파동을<br>잠재우는 시간을 가집니다.</p>
+                    </div>
+                    <div class="card fade-in" style="transition-delay: 0.2s;">
+                        <div class="card-icon">🌱</div>
+                        <h3>부담 없는 루틴</h3>
+                        <p>기록이 의무가 되지 않도록<br>하루 3분, 가볍게 이어갑니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="section-padding bg-light">
+            <div class="container">
+                <div class="section-header text-center fade-in">
+                    <h2>Features</h2>
+                    <p>내 감정을 다루는 4가지 방법</p>
+                </div>
+
+                <div class="feature-list">
+                    <!-- Feature 1 -->
+                    <div class="feature-item fade-in">
+                        <div class="feature-content">
+                            <span class="feature-tag">Guide</span>
+                            <h3>심신안정 가이드</h3>
+                            <p class="feature-desc">불안한 호흡을 차분하게. 시각적 가이드와 함께 천천히 숨을 고르며 마음의 안정을 찾습니다.</p>
+                        </div>
+                        <div class="feature-visual visual-guide">
+                            <!-- Visual placeholder -->
+                            <div class="visual-box">Breath</div>
+                        </div>
+                    </div>
+
+                    <!-- Feature 2 -->
+                    <div class="feature-item reverse fade-in">
+                        <div class="feature-content">
+                            <span class="feature-tag">Log & Report</span>
+                            <h3>감정 로그 & 리포트</h3>
+                            <p class="feature-desc">오늘의 감정 날씨는 어떤가요? 감정을 기록하고 패턴을 발견하여 나를 더 깊이 이해합니다.</p>
+                        </div>
+                        <div class="feature-visual visual-log">
+                            <div class="visual-box">Day Record</div>
+                        </div>
+                    </div>
+
+                    <!-- Feature 3 -->
+                    <div class="feature-item fade-in">
+                        <div class="feature-content">
+                            <span class="feature-tag">Solution</span>
+                            <h3>맞춤형 솔루션</h3>
+                            <p class="feature-desc">지금 내 감정에 딱 맞는 음악, 글귀, 행동 제안으로 즉각적인 위로를 받습니다.</p>
+                        </div>
+                        <div class="feature-visual visual-sol">
+                            <div class="visual-box">Music & Action</div>
+                        </div>
+                    </div>
+
+                    <!-- Feature 4 -->
+                    <div class="feature-item reverse fade-in">
+                        <div class="feature-content">
+                            <span class="feature-tag">Speaking</span>
+                            <h3>말하기 연습</h3>
+                            <p class="feature-desc">마음속에 담아둔 말을 소리 내어 뱉어보세요. 억눌린 감정을 해소하는 카타르시스를 경험합니다.</p>
+                        </div>
+                        <div class="feature-visual visual-speak">
+                            <div class="visual-box">Voice Wave</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="app-cta-banner text-center fade-in">
+                    <p>모든 기능은 앱에서 바로 경험할 수 있습니다.</p>
+                    <a href="#download" class="btn btn-primary">앱에서 시작하기</a>
+                </div>
+            </div>
+        </section>
+        <!-- Brand Blue Section -->
+        <section id="brand-identity" class="brand-blue-section text-center">
+            <div class="container fade-in">
+                <h2 class="brand-msg">Blue is Warm</h2>
+                <p>우울함의 상징이었던 블루가<br>가장 깊은 안정을 주는 색이 됩니다.</p>
+                <div class="color-circle"></div>
+            </div>
+        </section>
+
+        <!-- Philosophy Section -->
+        <section id="philosophy" class="section-padding">
+            <div class="container">
+                <div class="section-header text-center fade-in">
+                    <h2>Philosophy</h2>
+                    <p>우리가 감정을 대하는 태도</p>
+                </div>
+
+                <div class="philosophy-track">
+                    <div class="philo-item fade-in">
+                        <span class="step-num">01</span>
+                        <h3>감정은 근육입니다</h3>
+                        <p>쓰지 않으면 굳어버리고, 자주 들여다보면<br>더 유연하게 대처할 수 있는 마음의 근육입니다.</p>
+                    </div>
+                    <div class="philo-connector"></div>
+                    <div class="philo-item fade-in">
+                        <span class="step-num">02</span>
+                        <h3>흔들림은 자연스럽습니다</h3>
+                        <p>파도는 멈추지 않습니다.<br>중요한 건 파도를 타는 법을 배우는 것입니다.</p>
+                    </div>
+                    <div class="philo-connector"></div>
+                    <div class="philo-item fade-in">
+                        <span class="step-num">03</span>
+                        <h3>일상의 루틴이 됩니다</h3>
+                        <p>특별한 사건이 터졌을 때가 아닌,<br>매일 양치하듯 마음을 닦아내는 습관을 만듭니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Goods Section -->
+        <section id="goods" class="section-padding bg-light">
+            <div class="container">
+                <div class="section-header text-center fade-in">
+                    <h2>Reminal Goods</h2>
+                    <p>손에 잡히는 감정의 물성</p>
+                    <a href="goods.html"
+                        style="display: inline-block; margin-top: 10px; font-weight: 600; color: var(--color-primary); text-decoration: underline;">전체
+                        컬렉션 보기 &rarr;</a>
+                </div>
+                <div class="goods-grid">
+                    <div class="goods-item fade-in">
+                        <div class="goods-img">📝</div>
+                        <h4>감정조절 다이어리</h4>
+                        <p>나의 감정 패턴을 기록하고 돌아보며<br>일상을 정리할 수 있는 3개월 저널입니다.</p>
+                    </div>
+                    <div class="goods-item fade-in">
+                        <div class="goods-img">🎁</div>
+                        <h4>어드벤트 캘린더</h4>
+                        <p>모든 구성품을 한 번에 경험할 수 있도록<br>설계된 리민 올인원 감정 케어 패키지입니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Emergency & Footer -->
+        <section id="emergency" class="emergency-section">
+            <div class="container fade-in">
+                <h3>혼자 감당하기 힘들다면</h3>
+                <div class="emergency-list">
+                    <p>정신건강위기상담전화 1577-0199</p>
+                    <p>자살예방상담전화 1393</p>
+                </div>
+                <button class="btn btn-secondary btn-sm mt-3">앱에서 긴급 도움 설정하기</button>
+            </div>
+        </section>
+
+        <!-- Final CTA -->
+        <section id="download" class="final-cta text-center section-padding">
+            <div class="container fade-in">
+                <h2>지금, 당신의 파동을<br>잠재워보세요</h2>
+                <div class="cta-group justify-center mt-4">
+                    <a href="#" class="btn btn-primary">App Store</a>
+                    <a href="#" class="btn btn-primary">Google Play</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Brand Column -->
+                <div class="footer-col">
+                    <img src="assets/images/logo.png" alt="RE:MIN" class="footer-logo-img">
+                    <p class="footer-slogan">
+                        RE:MIN is an emotional wellness project supporting moments of regulation and calm.
+                        <br><br>
+                        감정의 파동을 연구하고,<br>더 부드러운 일상을 만듭니다.
+                    </p>
+                </div>
+
+                <!-- Navigation Column -->
+                <div class="footer-col">
+                    <h4>바로가기</h4>
+                    <ul class="footer-nav-list">
+                        <li><a href="index.html">홈</a></li>
+                        <li><a href="app.html">앱 소개</a></li>
+                        <li><a href="about.html">브랜드 이야기</a></li>
+                        <li><a href="goods.html">굿즈</a></li>
+                        <li><a href="team.html">팀</a></li>
+                    </ul>
+                </div>
+
+                <!-- Legal Support Column -->
+                <div class="footer-col">
+                    <h4>지원 및 약관</h4>
+                    <ul class="footer-nav-list">
+                        <li><a href="notice.html">공지사항</a></li>
+                        <li><a href="faq.html">자주 묻는 질문</a></li>
+                        <li><a href="privacy.html">개인정보 처리방침</a></li>
+                        <li><a href="terms.html">이용약관</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Column -->
+                <div class="footer-col">
+                    <h4>문의하기</h4>
+                    <div class="footer-contact-item">
+                        <span>📧</span> contact@remin.com
+                    </div>
+                    <button class="btn btn-primary btn-sm" onclick="openContactModal()">Contact Form</button>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/remin.official/" target="_blank" class="social-icon"
+                            aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 RE:MIN. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Contact Modal HTML -->
+    <div class="contact-modal-overlay">
+        <div class="contact-modal">
+            <span class="modal-close" onclick="closeContactModal()">&times;</span>
+            <h3 style="color: var(--color-primary); margin-bottom: 10px;">Contact Us</h3>
+            <p style="color: var(--color-text-body); font-size: 0.95rem;">리민 팀에게 궁금한 점을 남겨주세요.</p>
+
+            <form onsubmit="handleFormSubmit(event)" class="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Write your message..." required></textarea>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div id="success-modal" class="contact-modal-overlay">
+        <div class="message-modal">
+            <div class="result-icon">✅</div>
+            <h3 class="message-title">전송 완료</h3>
+            <p class="message-desc">
+                문의가 성공적으로 전송되었습니다.<br>
+                빠른 시일 내에 답변드리겠습니다.
+            </p>
+            <div class="btn-group">
+                <button class="btn btn-primary btn-sm" onclick="goHome()">홈으로 이동</button>
+                <button class="btn btn-primary btn-sm btn-outline"
+                    onclick="closeMessageModal('success-modal')">닫기</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fail Modal -->
+    <div id="fail-modal" class="contact-modal-overlay">
+        <div class="message-modal">
+            <div class="result-icon">⚠️</div>
+            <h3 class="message-title">전송 실패</h3>
+            <p class="message-desc">
+                일시적인 오류가 발생했습니다.<br>
+                잠시 후 다시 시도해주세요.<br>
+                <br>
+                <small>계속 문제가 발생하면 아래 이메일로 문의주세요.<br>dokyeongseyoung@gmail.com</small>
+            </p>
+            <div class="btn-group">
+                <button class="btn btn-primary btn-sm" onclick="resetFormAndRetry()">다시 시도</button>
+                <button class="btn btn-primary btn-sm btn-outline" onclick="goHome()">홈으로 이동</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/wave.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
