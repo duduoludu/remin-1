@@ -71,7 +71,7 @@ export default function HeroSection() {
                 }}
             >
                 {/* Texture/Noise inside the fog to make it look like "Fog" not just gray div */}
-                <div className="absolute inset-0 opacity-50 bg-[url('/noise.png')] mix-blend-overlay" />
+                <div className="absolute inset-0 opacity-50 bg-[url('/remin/noise.png')] mix-blend-overlay" />
                 <div className="absolute inset-0 flex items-center justify-center">
                     {/* Optional: Subtle suggestion in the fog */}
                     <span className="text-remin-text/10 font-serif text-9xl blur-sm select-none">FOG</span>
