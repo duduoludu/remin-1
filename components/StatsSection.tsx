@@ -28,11 +28,11 @@ export default function StatsSection() {
                             initial={{ scale: 0.5, opacity: 0 }}
                             animate={isInView ? { scale: 1, opacity: 1 } : {}}
                             transition={{ type: "spring", stiffness: 100, delay: 0.2 + (i * 0.1) }}
-                            className="text-6xl md:text-8xl font-serif font-bold text-remin-blue mb-4 block"
+                            className="text-6xl md:text-8xl font-clash font-bold text-remin-blue mb-4 block"
                         >
                             {stat.value}
                         </motion.div>
-                        <h3 className="text-xl font-bold text-remin-text mb-2 uppercase tracking-widest">{stat.label}</h3>
+                        <h3 className="text-xl font-bold text-remin-text mb-2 uppercase tracking-widest font-clash">{stat.label}</h3>
                         <p className="text-remin-text/50 font-light">{stat.desc}</p>
                     </motion.div>
                 ))}

@@ -4,10 +4,22 @@
   --color-remin-blue: #6DA0E1;
   --color-remin-clear: #F4F6F8;
   --color-remin-text: #2C3E50;
-  
+
   --font-sans: var(--font-inter);
   --font-serif: var(--font-playfair);
+  --font-clash: "Clash Display Semibold", sans-serif;
 }
+
+@font-face {
+  font-family: "Clash Display Semibold";
+  src: url("https://db.onlinewebfonts.com/t/063b1ecb77f04e4643e50307b2c53d9a.eot");
+  src: url("https://db.onlinewebfonts.com/t/063b1ecb77f04e4643e50307b2c53d9a.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/063b1ecb77f04e4643e50307b2c53d9a.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/063b1ecb77f04e4643e50307b2c53d9a.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/063b1ecb77f04e4643e50307b2c53d9a.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/063b1ecb77f04e4643e50307b2c53d9a.svg#Clash Display Semibold")format("svg");
+}
+
 
 /* Custom Utilities */
 @layer utilities {

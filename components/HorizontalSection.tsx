@@ -52,13 +52,13 @@ export default function HorizontalSection() {
                         initial={{ y: 0, opacity: 0.5, scale: 0.9 }}
                         animate={{ y: [0, 5, 0] }}
                         transition={{ duration: 3, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
-                        className="w-40 h-10 rounded-full bg-white/40 border border-white/20 backdrop-blur-sm"
+                        className="w-40 h-10 rounded-full bg-remin-blue/10 border border-remin-blue/10 backdrop-blur-sm"
                     />
                     <motion.div
                         initial={{ y: 0, opacity: 0.7, scale: 0.95 }}
                         animate={{ y: [0, -5, 0] }}
                         transition={{ duration: 3, repeat: Infinity, ease: "easeInOut", delay: 0.2 }}
-                        className="w-48 h-12 rounded-full bg-white/60 border border-white/30 backdrop-blur-md"
+                        className="w-48 h-12 rounded-full bg-remin-blue/20 border border-remin-blue/20 backdrop-blur-md"
                     />
                     {/* Active Card (Current log) */}
                     <motion.div
@@ -117,14 +117,14 @@ export default function HorizontalSection() {
 
                     {/* Intro Text Block */}
                     <div className="flex-shrink-0 w-[400px] flex flex-col justify-center">
-                        <h3 className="text-5xl font-bold text-remin-text mb-6 tracking-tight leading-tight">
-                            How Remin<br />Works
+                        <h3 className="text-5xl font-bold text-remin-text mb-6 tracking-tight leading-tight font-clash">
+                            How re:min<br />Works
                         </h3>
                         <p className="text-lg text-remin-text/60 font-light tracking-wide">
                             내 감정을 다루는 4가지 방법
                         </p>
                         <div className="flex items-center gap-2 mt-8 text-remin-blue/80 animate-pulse">
-                            <span className="text-sm font-medium uppercase tracking-widest">Scroll</span>
+                            <span className="text-sm font-medium uppercase tracking-widest font-clash">Scroll</span>
                             <ArrowRight className="w-5 h-5" />
                         </div>
                     </div>
@@ -134,7 +134,7 @@ export default function HorizontalSection() {
                         <div key={card.id} className="h-[60vh] w-[450px] flex-shrink-0 group">
                             <ReminGlass className="w-full h-full p-8 md:p-12 flex flex-col justify-between" hoverEffect={true}>
                                 <div className="relative z-10">
-                                    <span className={`font-bold tracking-widest uppercase text-xs mb-4 block ${card.accentColor}`}>
+                                    <span className={`font-bold tracking-widest uppercase text-xs mb-4 block ${card.accentColor} font-clash`}>
                                         Step 0{card.id}
                                     </span>
                                     <h3 className="text-3xl md:text-5xl font-serif text-remin-text mb-6">

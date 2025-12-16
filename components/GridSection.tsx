@@ -80,44 +80,43 @@ export default function GridSection() {
                     <motion.span
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}
-                        className="text-remin-blue font-bold tracking-[0.2em] uppercase text-xs mb-6 block"
+                        className="text-remin-blue font-bold tracking-[0.2em] uppercase text-xs mb-6 block font-clash"
                     >
                         The Origin
                     </motion.span>
 
-                    <h2 className="text-5xl md:text-7xl font-serif font-bold text-remin-text mb-8 leading-[0.9]">
+                    <h2 className="text-5xl md:text-7xl font-clash font-bold text-remin-text mb-8 leading-[0.9]">
                         Blue is<br />
-                        <span className="italic text-remin-blue/80">The Clear Sky.</span>
+                        <span className="italic text-remin-blue/80">The Stable Wave.</span>
                     </h2>
 
                     <div className="space-y-6 text-lg md:text-xl font-light text-remin-text/70 leading-relaxed whitespace-pre-line break-keep">
                         <p>
-                            리민(Remin)의 이야기는 하늘을 떠다니는<br />
-                            <strong>'구름'</strong>에서 시작되었습니다.
+                            re:min 역시 감정을 억제하거나 지우려 하지 않습니다. 대신 감정이 지나갈 수 있도록 리듬을 설계하는 브랜드입니다.<br />
+                            우리는 감정을 하나의 파동으로 바라봅니다. 파동은 통제할수록 커지고, 흐르게 두면 서서히 감쇠됩니다. re:min은 이 감정의 파동이 가장 안정적인 리듬으로 바뀌는 순간을 디자인합니다.
                         </p>
                         <p>
-                            번개가 치고, 비가 내리고, 바람에 흩어지는 구름은<br />
-                            마치 시시각각 변하는 우리의 <strong>감정</strong>과 닮아 있습니다.
+                            리민 블루는 완전히 멈춘 고요의 색이 아닙니다. 리민 블루는 감정의 파동이 가장 안정적인 <strong>흐름</strong>으로 바뀔때의 색입니다.<br />
+                            사람의 감정이 가장 깊이 이완된 순간, 열화상 카메라에서 붉은 열기가 사라진 자리에 차분하고 깊은 파란색이 감지되었습니다.
                         </p>
                         <p>
-                            하지만 구름 뒤에는 언제나 변하지 않는<br />
-                            맑고 고요한 하늘이 존재합니다.<br />
-                            우리는 그 완전한 평온의 색을 <span className="underline decoration-remin-blue decoration-1 underline-offset-4">Remin Blue</span>라 부릅니다.
+                            리민의 브랜드 컬러인 <span className="underline decoration-remin-blue decoration-1 underline-offset-4">‘리미널 블루(Reminal Blue)’</span>는 바로 그 절대적인 안정의 순간을 포착한 색입니다.<br />
+                            엄마의 품처럼, 달궈진 마음을 식혀주는 이 잔잔한 파랑 안에서 당신은 온전한 휴식을 경험하게 될 것입니다.
                         </p>
                     </div>
 
                     <div className="mt-12 flex gap-12 font-mono text-xs text-remin-text/40">
                         {/* Color codes */}
                         <div className="cursor-pointer hover:text-remin-blue transition-colors" onClick={handleCopyColor} title="Click to copy HEX">
-                            <span className="block font-bold text-remin-blue mb-1">HEX</span>
+                            <span className="block font-bold text-remin-blue mb-1 font-clash">HEX</span>
                             #6DA0E1
                         </div>
                         <div>
-                            <span className="block font-bold text-remin-blue mb-1">RGB</span>
+                            <span className="block font-bold text-remin-blue mb-1 font-clash">RGB</span>
                             109, 160, 225
                         </div>
                         <div>
-                            <span className="block font-bold text-remin-blue mb-1">CMYK</span>
+                            <span className="block font-bold text-remin-blue mb-1 font-clash">CMYK</span>
                             54, 30, 0, 0
                         </div>
                     </div>
@@ -148,10 +147,10 @@ export default function GridSection() {
                         <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-white/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
                         <div className="text-center z-10 pointer-events-none transition-all duration-300">
-                            <span className={`block text-white font-serif italic text-2xl opacity-90 mb-1 transition-all duration-300 ${copied ? 'translate-y-[-10px] opacity-0' : 'translate-y-0 opacity-100'}`}>
+                            <span className={`block text-white font-clash italic text-2xl opacity-90 mb-1 transition-all duration-300 ${copied ? 'translate-y-[-10px] opacity-0' : 'translate-y-0 opacity-100'}`}>
                                 Pure Quiet
                             </span>
-                            <span className={`block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white font-bold text-xl whitespace-nowrap transition-all duration-300 ${copied ? 'opacity-100 scale-100' : 'opacity-0 scale-50'}`}>
+                            <span className={`block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white font-bold text-xl whitespace-nowrap transition-all duration-300 font-clash ${copied ? 'opacity-100 scale-100' : 'opacity-0 scale-50'}`}>
                                 Copied! ✨
                             </span>
                             <span className={`block text-white/60 text-xs mt-2 transition-opacity duration-300 ${copied ? 'opacity-0' : 'opacity-0 group-hover:opacity-100'}`}>
@@ -163,13 +162,13 @@ export default function GridSection() {
                     {/* Floating Labels */}
                     <motion.div
                         style={{ y: y2, x: 50 }}
-                        className="absolute top-20 right-0 bg-white/50 backdrop-blur-md px-4 py-2 rounded-full border border-white/40 text-xs font-bold text-remin-text/50 shadow-sm"
+                        className="absolute top-20 right-0 bg-white/50 backdrop-blur-md px-4 py-2 rounded-full border border-white/40 text-xs font-bold text-remin-text/50 shadow-sm font-clash"
                     >
                         Visual Tranquility
                     </motion.div>
                     <motion.div
                         style={{ y: y1, x: -50 }}
-                        className="absolute bottom-40 left-10 bg-white/50 backdrop-blur-md px-4 py-2 rounded-full border border-white/40 text-xs font-bold text-remin-text/50 shadow-sm"
+                        className="absolute bottom-40 left-10 bg-white/50 backdrop-blur-md px-4 py-2 rounded-full border border-white/40 text-xs font-bold text-remin-text/50 shadow-sm font-clash"
                     >
                         Clear Harmony
                     </motion.div>

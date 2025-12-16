@@ -12,7 +12,7 @@ export default function GlobalFooter() {
                 {/* Col 1: Brand Identity */}
                 <div className="col-span-1 md:col-span-1">
                     <Link href="/" className="block mb-8">
-                        <span className="font-serif text-3xl font-bold text-remin-text">Remin.</span>
+                        <span className="font-serif text-3xl font-bold text-remin-text">remin.</span>
                     </Link>
                     <p className="text-remin-text/60 font-light leading-relaxed mb-8">
                         From chaos to clarity.<br />
@@ -73,7 +73,7 @@ export default function GlobalFooter() {
 
             {/* Bottom Legal */}
             <div className="max-w-7xl mx-auto border-t border-remin-text/10 pt-12 flex flex-col md:flex-row justify-between items-center text-xs text-remin-text/40 font-mono">
-                <p>© 2024 Remin Inc. All rights reserved.</p>
+                <p>© 2024 re:min Inc. All rights reserved.</p>
                 <p className="mt-4 md:mt-0">Seoul, Republic of Korea</p>
             </div>
 

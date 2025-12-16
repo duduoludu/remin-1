@@ -46,7 +46,7 @@ export default function FeatureDetailSection() {
                     <motion.span
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        className="text-remin-blue font-bold tracking-widest uppercase text-sm mb-4 block"
+                        className="text-remin-blue font-bold tracking-widest uppercase text-sm mb-4 block font-clash"
                     >
                         Deep Dive
                     </motion.span>
@@ -78,7 +78,7 @@ export default function FeatureDetailSection() {
                                 <div className={`p-3 rounded-2xl ${feature.color} text-remin-blue`}>
                                     <feature.icon size={24} />
                                 </div>
-                                <span className="text-remin-text/50 font-serif italic">{feature.category}</span>
+                                <span className="text-remin-text/50 italic font-clash">{feature.category}</span>
                             </div>
                             <h3 className="text-3xl md:text-4xl font-bold text-remin-text mb-6 leading-tigher whitespace-pre-line">
                                 {feature.title}

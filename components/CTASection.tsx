@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { Download, Instagram } from "lucide-react";
 
 export default function CTASection() {
     return (
@@ -14,9 +15,9 @@ export default function CTASection() {
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}
-                    className="text-4xl md:text-6xl font-bold mb-8 leading-tight"
+                    className="text-4xl md:text-6xl font-bold mb-8 leading-tight font-clash"
                 >
-                    마음의 날씨를<br />지금 바꿔보세요.
+                    불안한 파동을<br />안정적인 흐름으로.
                 </motion.h2>
                 <motion.p
                     initial={{ opacity: 0, y: 20 }}
@@ -24,7 +25,7 @@ export default function CTASection() {
                     transition={{ duration: 0.8, delay: 0.2 }}
                     className="text-lg md:text-xl text-white/80 mb-12 font-light"
                 >
-                    리민과 함께라면 흐린 마음도 언제든 맑아질 수 있습니다.
+                    리민에서 오직 나에게 집중하는 시간을 가져보세요.
                 </motion.p>
 
                 <motion.div
@@ -34,15 +35,16 @@ export default function CTASection() {
                     className="flex flex-col sm:flex-row gap-4 justify-center"
                 >
                     <button className="px-8 py-4 bg-white text-remin-blue rounded-full font-bold text-lg hover:bg-white/90 transition-colors shadow-lg flex items-center justify-center gap-2">
-                        {/* Placeholder for Apple Logo */}
-                        <span>App Store</span>
+                        <Download size={20} />
+                        <span>앱 다운로드</span>
                     </button>
                     <button className="px-8 py-4 bg-white/20 backdrop-blur-md text-white border border-white/40 rounded-full font-bold text-lg hover:bg-white/30 transition-colors shadow-lg flex items-center justify-center gap-2">
-                        {/* Placeholder for Google Play Logo */}
-                        <span>Google Play</span>
+                        <Instagram size={20} />
+                        <span>공식 인스타그램</span>
                     </button>
                 </motion.div>
             </div>
         </section>
     );
 }
+

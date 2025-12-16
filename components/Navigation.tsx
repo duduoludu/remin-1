@@ -56,7 +56,7 @@ export default function Navigation() {
                                 e.currentTarget.nextElementSibling?.classList.remove('hidden');
                             }}
                         />
-                        <span className="hidden text-xl md:text-2xl font-serif font-bold text-remin-text">Remin.</span>
+                        <span className="hidden text-xl md:text-2xl font-clash font-bold text-remin-text">remin.</span>
                     </Link>
 
                     {/* Menu Button */}
@@ -119,7 +119,7 @@ export default function Navigation() {
                                             animate={{ y: 0, opacity: 1 }}
                                             exit={{ y: 20, opacity: 0 }}
                                             transition={{ delay: index * 0.1, duration: 0.5 }}
-                                            className="text-4xl md:text-6xl font-serif font-bold hover:text-remin-blue transition-colors cursor-pointer"
+                                            className="text-4xl md:text-6xl font-clash font-bold hover:text-remin-blue transition-colors cursor-pointer"
                                         >
                                             {link.title}
                                         </motion.div>
@@ -140,11 +140,11 @@ export default function Navigation() {
                                     e.currentTarget.style.display = 'none';
                                     e.currentTarget.nextElementSibling?.classList.remove('hidden');
                                 }} />
-                                <span className="hidden font-serif font-bold text-lg">Remin.</span>
+                                <span className="hidden font-clash font-bold text-lg">remin.</span>
                             </Link>
                             <div className="space-y-1">
                                 <p>Based in Seoul</p>
-                                <p>© 2024 Remin</p>
+                                <p>© 2024 re:min</p>
                             </div>
                         </motion.div>
                     </motion.div>

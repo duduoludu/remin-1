@@ -57,7 +57,7 @@ export default function MainContent() {
                 >
                     <div>
                         <h3 className="text-2xl font-bold mb-2">Start your journey</h3>
-                        <p className="text-remin-text/70">Find your Remin Blue today.</p>
+                        <p className="text-remin-text/70">Find your re:min Blue today.</p>
                     </div>
                     <button className="px-6 py-3 bg-remin-blue text-white rounded-full hover:bg-blue-500 transition-colors font-semibold">
                         Get Started

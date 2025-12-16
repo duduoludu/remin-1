@@ -79,7 +79,7 @@ export default function HeroSection() {
                 />
                 <div className="absolute inset-0 flex items-center justify-center">
                     {/* Optional: Subtle suggestion in the fog */}
-                    <span className="text-remin-text/10 font-serif text-9xl blur-sm select-none">FOG</span>
+                    <span className="text-remin-text/10 font-clash text-9xl blur-sm select-none">FOG</span>
                 </div>
             </motion.div>
 

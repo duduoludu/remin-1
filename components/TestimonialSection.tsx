@@ -16,7 +16,7 @@ export default function TestimonialSection() {
             {/* Header */}
             <div className="text-center mb-24 relative z-10">
                 <span className="text-remin-blue font-bold tracking-widest uppercase mb-4 block">Voices</span>
-                <h2 className="text-4xl md:text-5xl font-serif font-bold text-remin-text">Found Calm</h2>
+                <h2 className="text-4xl md:text-5xl font-clash font-bold text-remin-text">Found Calm</h2>
             </div>
 
             {/* Horizontal Scroll / Grid */}
