@@ -3,10 +3,12 @@
 import { motion } from "framer-motion";
 
 const teamMembers = [
-    { id: 1, name: "Sarah Kim", role: "Creative Director", desc: "Designed the fog." },
-    { id: 2, name: "James Lee", role: "Lead Developer", desc: "Built the grid." },
-    { id: 3, name: "Min Park", role: "Sound Designer", desc: "Composed the silence." },
-    { id: 4, name: "Alice Jung", role: "UX Researcher", desc: "Found the clarity." },
+    { id: 1, name: "Kim Dokyeong", role: "App & Web Design / Dev", desc: "Building the digital sanctuary." },
+    { id: 2, name: "Song Hyekyeong", role: "Craft & Goods", desc: "Touching the texture of calm." },
+    { id: 3, name: "Song Chanjong", role: "Craft & Goods", desc: "Shaping the physical form." },
+    { id: 4, name: "Park Sanghee", role: "App Design", desc: "Visualizing the flow of mind." },
+    { id: 5, name: "Jang Dayeon", role: "Creative Direction", desc: "Defining the mood of serenity." },
+    { id: 6, name: "Moon Junhyeong", role: "Graphic & Poster Design", desc: "Capturing the essence in visuals." },
 ];
 
 export default function TeamPage() {

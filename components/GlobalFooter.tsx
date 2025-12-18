@@ -21,9 +21,14 @@ export default function GlobalFooter() {
                     </p>
                     <div className="flex gap-4">
                         {/* Social Placeholders */}
-                        <div className="w-10 h-10 rounded-full bg-remin-text/5 hover:bg-remin-blue/10 transition-colors flex items-center justify-center cursor-pointer">
+                        <a
+                            href="https://www.instagram.com/remin.official/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="w-10 h-10 rounded-full bg-remin-text/5 hover:bg-remin-blue/10 transition-colors flex items-center justify-center cursor-pointer"
+                        >
                             <span className="text-xs font-bold text-remin-text">IG</span>
-                        </div>
+                        </a>
                         <div className="w-10 h-10 rounded-full bg-remin-text/5 hover:bg-remin-blue/10 transition-colors flex items-center justify-center cursor-pointer">
                             <span className="text-xs font-bold text-remin-text">YT</span>
                         </div>

@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Cloud, PenTool, Music } from "lucide-react";
+import { Cloud, PenTool, BarChart3 } from "lucide-react";
 import ReminGlass from "./ui/ReminGlass";
 import LivingCloud from "./ui/LivingCloud";
 
@@ -24,10 +24,10 @@ const features = [
     },
     {
         id: 3,
-        category: "Solution",
-        title: "당신만을 위한\n맞춤형 처방.",
-        desc: "지금 당신의 상태에 딱 맞는 플레이리스트와 글귀를 추천합니다.\n우울할 땐 따뜻한 위로를, 불안할 땐 단단한 용기를.\n내 손 안의 주치의가 되어드립니다.",
-        icon: Music,
+        category: "Insight",
+        title: "나를 깊이 이해하는\n감정 인사이트.",
+        desc: "기록된 감정 데이터 속에서 나만의 패턴을 발견합니다.\n월간 리포트와 감정 추이를 통해\n마음의 흐름을 객관적으로 바라보고 이해하세요.",
+        icon: BarChart3,
         color: "bg-sky-100",
     },
 ];
@@ -115,14 +115,15 @@ export default function FeatureDetailSection() {
                                         </div>
                                     )}
                                     {index === 2 && (
-                                        // Music Wave abstraction
-                                        <div className="flex gap-2 items-center">
-                                            {[...Array(5)].map((_, i) => (
+                                        // Insight Bar Chart Visual
+                                        <div className="flex gap-3 items-end h-32">
+                                            {[0.4, 0.7, 0.5, 0.9, 0.6].map((h, i) => (
                                                 <motion.div
                                                     key={i}
-                                                    animate={{ height: ["20%", "80%", "20%"] }}
-                                                    transition={{ duration: 1, repeat: Infinity, delay: i * 0.1 }}
-                                                    className="w-4 bg-remin-blue/40 rounded-full h-20"
+                                                    initial={{ height: 0 }}
+                                                    whileInView={{ height: `${h * 100}%` }}
+                                                    transition={{ duration: 1, delay: i * 0.1 }}
+                                                    className="w-6 bg-remin-blue/40 rounded-t-lg"
                                                 />
                                             ))}
                                         </div>
@@ -132,7 +133,6 @@ export default function FeatureDetailSection() {
                         </motion.div>
                     </div>
                 ))}
-
             </div>
         </section>
     );

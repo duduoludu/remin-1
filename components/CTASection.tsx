@@ -34,14 +34,24 @@ export default function CTASection() {
                     transition={{ duration: 0.5, delay: 0.4 }}
                     className="flex flex-col sm:flex-row gap-4 justify-center"
                 >
-                    <button className="px-8 py-4 bg-white text-remin-blue rounded-full font-bold text-lg hover:bg-white/90 transition-colors shadow-lg flex items-center justify-center gap-2">
+                    <a
+                        href="https://chanjong7627-max.github.io/REMIN/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="px-8 py-4 bg-white text-remin-blue rounded-full font-bold text-lg hover:bg-white/90 transition-colors shadow-lg flex items-center justify-center gap-2"
+                    >
                         <Download size={20} />
                         <span>앱 다운로드</span>
-                    </button>
-                    <button className="px-8 py-4 bg-white/20 backdrop-blur-md text-white border border-white/40 rounded-full font-bold text-lg hover:bg-white/30 transition-colors shadow-lg flex items-center justify-center gap-2">
+                    </a>
+                    <a
+                        href="https://www.instagram.com/remin.official/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="px-8 py-4 bg-white/20 backdrop-blur-md text-white border border-white/40 rounded-full font-bold text-lg hover:bg-white/30 transition-colors shadow-lg flex items-center justify-center gap-2"
+                    >
                         <Instagram size={20} />
                         <span>공식 인스타그램</span>
-                    </button>
+                    </a>
                 </motion.div>
             </div>
         </section>
